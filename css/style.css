@@ -153,9 +153,12 @@
   color: #000000;
 }
 
+.menutext a:hover {
+  color: rgb(10, 120, 134);
+}
+
 .menutext a:visited {
   text-decoration: none;
-  color: #000000;
 }
 
 
@@ -174,9 +177,13 @@
   color: #000000;
 }
 
+.abouttext a:hover {
+  color: rgb(10, 120, 134);
+}
+
+
 .abouttext a:visited {
   text-decoration: none;
-  color: #000000;
 }
 
 
