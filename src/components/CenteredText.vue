@@ -1,8 +1,36 @@
 <script setup lang="ts">
+const props = defineProps({
+  text: String,
+})
 </script>
 
 <template>
-  <div text-center py-10>
-    orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  <div text-center py-8 pb-10 class="title">
+    <p v-html="props.text" />
   </div>
 </template>
+
+<style lang="scss" scoped>
+div {
+  background: #fff;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: black;
+  :deep(a):hover,
+  :deep(span):hover {
+  cursor: pointer;
+    text-decoration: underline;
+  }
+  p {
+    max-width: calc(100% - 15px);
+    margin: 0 auto;
+
+    font-size: 0.85rem;
+    @include medium {
+      font-size: 1.25rem;
+      max-width: 895px;
+    }
+  }
+}
+</style>

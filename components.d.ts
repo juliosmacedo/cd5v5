@@ -8,11 +8,8 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     CenteredText: typeof import('./src/components/CenteredText.vue')['default']
-    Counter: typeof import('./src/components/Counter.vue')['default']
-    Footer: typeof import('./src/components/Footer.vue')['default']
     GridText: typeof import('./src/components/GridText.vue')['default']
     NavMenu: typeof import('./src/components/NavMenu.vue')['default']
-    Old: typeof import('./src/components/old.vue')['default']
     ParallaxSection: typeof import('./src/components/ParallaxSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

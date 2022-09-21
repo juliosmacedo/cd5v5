@@ -103,58 +103,6 @@ const navItems = [
       max-width: 760px;
     }
   }
-  // color: black;
-  // width: 100%;
-  // opacity: 80%;
-  // background-color: rgb(255, 255, 255);
-  // overflow: hidden;
-  // position: fixed;
-  // top: 0;
-  // z-index: 1;
-  // scroll-behavior: smooth;
-  // list-style:none;
 
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  // align-content: center;
-  // display: inline-block;
-  // color: #000000;
-  // font-family: "Oswald", sans-serif;
-  // margin: 0 auto;
-  // padding: 1em 1em;
-  // text-decoration: none;
-  // font-size: 1.2em;
-  // scroll-behavior: smooth;
-}
-
-.topnav ul {
-  // text-align: center;
-  // width: 50%;
-  // height: 80%;
-  // margin: 0 auto;
-  // text-align: center;
-}
-
-.topnav li {
-  // display: block;
-  // float: left;
-  // width: 25%;
-  // text-align: center;
-  // line-height: 2em;
-  // position: relative;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  // background-color: #ddd;
-  // color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  // background-color: #000000;
-  // color: white;
 }
 </style>

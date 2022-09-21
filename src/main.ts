@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import routes from 'virtual:generated-pages'
+import Notifications from '@kyvg/vue3-notification'
 import App from './App.vue'
 import { createWPWidget } from '~/modules'
 
@@ -16,4 +17,5 @@ const router = createRouter({
   routes,
 })
 app.use(router)
+app.use(Notifications)
 app.mount('#app')

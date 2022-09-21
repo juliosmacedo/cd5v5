@@ -6,6 +6,7 @@ const props = defineProps({
   },
   text: String,
   bg: String,
+  id: String,
 })
 
 const handleArrow = () => {
@@ -18,6 +19,7 @@ const handleArrow = () => {
 
 <template>
   <div
+    :id="props.id"
     class="parallax-section"
     :class="{
       '--hero': !!props.logo,
@@ -64,6 +66,13 @@ const handleArrow = () => {
     height: calc(347px / 2);
     margin: 6rem auto 0;
     filter: drop-shadow(1px 1px 1px #222);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-name: appear;
   }
 
   @include medium {
@@ -82,7 +91,14 @@ const handleArrow = () => {
     font-weight: 400;
     text-shadow: 1.4px 1.4px 2px #000;
     opacity: 0.9;
-    color: white
+    color: white;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: appear;
   }
 
   @include medium {
@@ -98,6 +114,10 @@ const handleArrow = () => {
     left: 50%;
     transform: translateX(-30px);
     cursor: pointer;
+    display: none;
+    @include medium {
+      display: block;
+    }
     svg {
       width: 60px;
       height: 6em;
@@ -130,5 +150,10 @@ const handleArrow = () => {
 40% {opacity:1}
 80% {opacity:0}
 100% {opacity:0}
+}
+
+@keyframes appear
+{
+100% {opacity: 1; transform: translateY(0)}
 }
 </style>
