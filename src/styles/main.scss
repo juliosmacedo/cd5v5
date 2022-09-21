@@ -1,0 +1,26 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+  * {
+    box-sizing: inherit;
+  }
+}
+
+html.dark {
+  background: #121212;
+}
+
+.copy {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.title {
+  font-family: 'Oswald', sans-serif;
+}
