@@ -8,7 +8,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 
 export default defineConfig({
-  // base: 'https://cozinhadoscinco.com.br',
+  base: '/cd5v5/',
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
