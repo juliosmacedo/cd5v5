@@ -2,7 +2,7 @@
 import ParallaxSection from '~/components/ParallaxSection.vue'
 import CenteredText from '~/components/CenteredText.vue'
 import GridText from '~/components/GridText.vue'
-import HeroImg from '~/images/hero.jpg'
+import HeroImg from '~/assets/hero.jpg'
 
 const homepage = [
   {

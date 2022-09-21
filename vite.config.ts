@@ -9,6 +9,11 @@ import Unocss from 'unocss/vite'
 
 export default defineConfig({
   base: '/cd5v5/',
+  build: {
+    rollupOptions: {
+      external: ['clipboard'],
+    },
+  },
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
