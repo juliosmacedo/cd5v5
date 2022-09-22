@@ -11,7 +11,7 @@ const props = defineProps({
 
 const handleArrow = () => {
   window.scrollTo({
-    top: window.innerHeight,
+    top: window.innerHeight - 72,
     behavior: 'smooth',
   })
 }
