@@ -12,6 +12,7 @@
   "dependencies": {
     "@kyvg/vue3-notification": "^2.4.1",
     "@vueuse/core": "^9.2.0",
+    "clipboard": "^2.0.11",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5"
   },
